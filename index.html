@@ -1,0 +1,56 @@
+---
+layout: default
+title: ¿Ponele que sí?
+---
+
+<div class="page-header">
+  <h1>¿Nos juntamos?</h1>
+</div>
+
+<form role="form" action="/creado" method="">
+  <div class="form-group">
+    <input type="text" class="form-control input-lg" id="evento" placeholder="¿Qué hacemos?">
+  </div>
+
+  <div class="form-group">
+    <input type="text" class="form-control input-lg" id="donde" placeholder="¿Donde?">
+  </div>
+
+  <div class="form-group">
+    <input type="datetime" class="form-control input-lg" id="fecha" placeholder="¿Cuando?">
+  </div>
+
+  <h3>¿Quién va?</h3>
+
+  <div id="invidatos">
+    <div class="row">
+      <div class="col-xs-10">
+        <div class="form-group">
+          <input type="text" class="form-control" name="invitado1" id="invitado1" value="" placeholder="Sebastián" />
+        </div>
+      </div>
+      <div class="col-xs-2">
+        <button type="button" class="btn btn-danger btn-block">&times;</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-10">
+        <div class="form-group">
+          <input type="text" class="form-control" name="invitado2" id="invitado2" value="" placeholder="Marite" />
+        </div>
+      </div>
+      <div class="col-xs-2">
+        <button type="button" class="btn btn-danger btn-block">&times;</button>
+      </div>
+    </div>
+    <div>
+      <input type="submit" name="guardar" class="btn btn-default" id="mas" value="Más gente" />
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="actions">
+    <input type="submit" name="guardar" class="btn btn-lg btn-success" id="crear" value="Crear evento" />
+  </div>
+</form>
